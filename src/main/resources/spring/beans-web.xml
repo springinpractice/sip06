@@ -8,6 +8,7 @@
 	
 	<mvc:annotation-driven />
 	<mvc:default-servlet-handler />
+	
 	<mvc:view-controller path="/home.html" />
 	<mvc:view-controller path="/login-required.html" view-name="loginRequired" />
 	<mvc:view-controller path="/login-failed.html" view-name="loginFailed" />
