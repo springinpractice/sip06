@@ -9,7 +9,8 @@
 	<mvc:annotation-driven />
 	<mvc:default-servlet-handler />
 	<mvc:view-controller path="/home.html" />
-	<mvc:view-controller path="/login.html" />
+	<mvc:view-controller path="/login-required.html" view-name="loginRequired" />
+	<mvc:view-controller path="/login-failed.html" view-name="loginFailed" />
 	
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
 		p:viewClass="org.springframework.web.servlet.view.JstlView"
