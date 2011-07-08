@@ -11,10 +11,10 @@
 		<version>1.0-RELEASE</version>
 	</parent>
 	
-	<artifactId>com.springinpractice.06_01</artifactId>
+	<artifactId>com.springinpractice.06_02</artifactId>
 	<packaging>war</packaging>
 	
-	<name>Spring in Practice Recipe 6.1</name>
+	<name>Spring in Practice Recipe 6.2</name>
 	<description>
 		Implement login and logout with remember-me authentication.
 	</description>

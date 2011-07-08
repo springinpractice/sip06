@@ -11,7 +11,7 @@
 		<title>${pageTitle}</title>
 	</head>
 	<body>
-		<%@ include file="/WEB-INF/jsp/topNav.jspf" %>
+		<%@ include file="/WEB-INF/jsp/skin/topNav.jspf" %>
 		
 		<c:if test="${param.failed == true}">
 			<div class="warningBox">

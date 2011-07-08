@@ -10,7 +10,7 @@
 		<title>Welcome to SiP University</title>
 	</head>
 	<body>
-		<%@ include file="/WEB-INF/jsp/topNav.jspf" %>
+		<%@ include file="/WEB-INF/jsp/skin/topNav.jspf" %>
 		
 		<div class="yui-ge">
 			<h1>Welcome to SiP University</h1>
