@@ -1,0 +1,22 @@
+<%@ include file="/WEB-INF/jsp/skin/init.jspf" %>
+
+<c:url var="homeUrl" value="/home.html" />
+<c:url var="loginUrl" value="/spring_security_login" />
+<c:url var="logoutUrl" value="/j_spring_security_logout" />
+
+<div class="yui-gf">
+	<div id="topNav" class="yui-u first">
+		<a href="${homeUrl}">Home</a>
+	</div>
+	<div id="sessionInfo" class="yui-u">
+		<div id="sessionInfo" class="yui-u">
+			<security:authorize access="isAnonymous()">
+				Hi, guest. <a href="${loginUrl}">Log in</a>
+			</security:authorize>
+			<security:authorize access="isAuthenticated()">
+				Hi, <security:authentication property="principal.username" />.
+				<a href="${logoutUrl}">Log out</a>
+			</security:authorize>
+		</div>
+	</div>
+</div>

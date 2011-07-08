@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<%@ include file="/WEB-INF/jsp/init.jsp" %>
+<%@ include file="/WEB-INF/jsp/skin/init.jspf" %>
 
 <c:set var="pageTitle" value="Please log in" />
 <c:url var="postLoginUrl" value="/j_spring_security_check" />
@@ -11,8 +11,6 @@
 		<title>${pageTitle}</title>
 	</head>
 	<body>
-		<%@ include file="/WEB-INF/jsp/skin/topNav.jspf" %>
-		
 		<c:if test="${param.failed == true}">
 			<div class="warningBox">
 				Your login attempt failed. Please try again, or contact technical support for further assistance.
