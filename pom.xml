@@ -11,12 +11,12 @@
 		<version>1.0-RELEASE</version>
 	</parent>
 	
-	<artifactId>com.springinpractice.06_03</artifactId>
+	<artifactId>com.springinpractice.06_04</artifactId>
 	<packaging>war</packaging>
 	
-	<name>Spring in Practice Recipe 6.3</name>
+	<name>Spring in Practice Recipe 6.4</name>
 	<description>
-		Implement login and logout with remember-me authentication.
+		TODO
 	</description>
 	<url>http://springinpractice.com/</url>
 	

@@ -14,15 +14,12 @@
 	</context-param>
 	<context-param>
 		<param-name>recipe</param-name>
-		<param-value>6.3</param-value>
+		<param-value>6.4</param-value>
 	</context-param>
 	<context-param>
 		<param-name>aboutThisRecipe</param-name>
 		<param-value><![CDATA[
-			<p>Recipe 6.3 shows how to implement an "always resident" login form&mdash;that is, one that appears on
-			every page of the site until the user logs in.</p>
-			<p>Use either <code>juan</code>/<code>juan</code> or <code>elvira/elvira</code> for the username and
-			password.</p>
+			TODO
 		]]></param-value>
 	</context-param>
 	<listener>
