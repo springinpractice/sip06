@@ -24,9 +24,11 @@
 	<body>
 		<div id="doc3">
 			<div id="hd">
-				<div class="regionInner">
-					<div id="hdTitle"></div>
-					<div id="hdAppName">SiP University</div>
+				<div id="innerHd">
+					<div class="regionInner">
+						<div id="hdTitle"></div>
+						<div id="hdAppName">SiP University</div>
+					</div>
 				</div>
 			</div>
 			<div id="bd">
