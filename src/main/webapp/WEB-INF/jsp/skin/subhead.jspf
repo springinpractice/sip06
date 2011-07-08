@@ -9,13 +9,13 @@
 		<a href="${homeUrl}">Home</a>
 	</div>
 	<div id="sessionInfo" class="yui-u">
-<%-- 		<security:authorize access="isAnonymous()"> --%>
+		<security:authorize access="isAnonymous()">
 			<form id="loginForm" action="${postLoginUrl}" method="post" style="font-size:85%">
 				<span style="white-space:no-wrap">Username: <input type="text" name="j_username" style="width:100px" /></span>
 				<span style="margin-left:5px;white-space:no-wrap">Password: <input type="password" name="j_password" style="width:100px" /></span>
 				<span style="margin-left:5px"><input type="submit" value="Log in" /></span>
 			</form>
-<%-- 		</security:authorize> --%>
+		</security:authorize>
 		<security:authorize access="isAuthenticated()">
 			Hi, <security:authentication property="principal.username" />.
 			<a href="${logoutUrl}">Log out</a>
