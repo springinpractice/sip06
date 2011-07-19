@@ -13,7 +13,23 @@
 		<remember-me />
 		<logout logout-success-url="/home.html" />
 	</http>
+	
+	<beans:bean id="passwordEncoder" class="org.springframework.security.authentication.encoding.ShaPasswordEncoder">
+		<beans:constructor-arg value="256" />
+	</beans:bean>
+
+	<!-- Better to generate a large, random salt (stored as plaintext with the user account) to make dictionary attacks
+	     harder, but this works for modest security needs. At least we are using a variable salt, which still prevents
+	     attackers from using a single rainbow table to attack the passwords. -->
+	<beans:bean id="saltSource"
+		class="org.springframework.security.authentication.dao.ReflectionSaltSource"
+		p:userPropertyToUse="id" />
+		
 	<authentication-manager>
-		<authentication-provider user-service-ref="userDetailsService" />
+		<authentication-provider user-service-ref="userDetailsService">
+			<password-encoder ref="passwordEncoder">
+				<salt-source ref="saltSource" />
+			</password-encoder>
+		</authentication-provider>
 	</authentication-manager>
 </beans:beans>

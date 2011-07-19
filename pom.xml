@@ -11,12 +11,12 @@
 		<version>1.0-RELEASE</version>
 	</parent>
 	
-	<artifactId>com.springinpractice.06_06</artifactId>
+	<artifactId>com.springinpractice.06_07</artifactId>
 	<packaging>war</packaging>
 	
-	<name>Spring in Practice Recipe 6.6</name>
+	<name>Spring in Practice Recipe 6.7</name>
 	<description>
-		Recipe 6.6 shows how to use a custom user service and user principal with Spring Security.
+		In recipe 6.7 we learn how to secure user passwords at rest in the database using hashing and salt.
 	</description>
 	<url>http://springinpractice.com/</url>
 	
