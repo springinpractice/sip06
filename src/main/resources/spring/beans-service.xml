@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+===============================================================================
+$Id$
+
+Copyright (c) 2010 Manning Publications Co.
+
+Willie Wheeler (willie.wheeler@gmail.com)
+
+Book web site   - http://www.manning.com/wheeler/
+Book blog       - http://springinpractice.com/
+Author web site - http://wheelersoftware.com/
+===============================================================================
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/jee
+		http://www.springframework.org/schema/jee/spring-jee-3.0.xsd">
+		
+	<jee:jndi-lookup id="dataSource" jndi-name="jdbc/Sip06DS" resource-ref="true"/>
+</beans>
