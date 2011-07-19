@@ -6,7 +6,10 @@
 	
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:/spring/beans-security.xml</param-value>
+		<param-value>
+			classpath:/spring/beans-security.xml
+			classpath:/spring/beans-service.xml
+		</param-value>
 	</context-param>
 	<context-param>
 		<param-name>appName</param-name>
@@ -19,7 +22,8 @@
 	<context-param>
 		<param-name>aboutThisRecipe</param-name>
 		<param-value><![CDATA[
-			TODO
+			<p>Recipe 6.4 shows how to use a database as an authentication source. Use either juan/juan or elvira/elvira
+			to log in.</p>
 		]]></param-value>
 	</context-param>
 	<listener>
