@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://jetty.mortbay.org/configure.dtd">
+
+<!--
+===============================================================================
+$Id$
+
+Copyright (c) 2010 Manning Publications Co.
+
+Willie Wheeler (willie.wheeler@gmail.com)
+
+Book web site   - http://www.manning.com/wheeler/
+Book blog       - http://springinpractice.com/
+Author web site - http://wheelersoftware.com/
+
+Make a copy of this file called jetty-env.xml in the current directory and
+modify the configuration as necessary.
+===============================================================================
+-->
+<Configure class="org.mortbay.jetty.webapp.WebAppContext">
+	<New id="sip06DS" class="org.mortbay.jetty.plus.naming.Resource">
+		<Arg></Arg>
+		<Arg>jdbc/Sip06DS</Arg>
+		<Arg>
+			<New class="org.apache.commons.dbcp.BasicDataSource">
+				<Set name="driverClassName">com.mysql.jdbc.Driver</Set>
+				<Set name="url">jdbc:mysql://localhost:3306/sip06?autoReconnect=true</Set>
+				<Set name="username">sip</Set>
+				<Set name="password">sip</Set>
+			</New>
+		</Arg>
+	</New>
+</Configure>
