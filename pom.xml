@@ -26,11 +26,13 @@
 	</properties>
 	
 	<dependencies>
+	
+		<!-- Spring in Practice dependencies -->
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>com.springinpractice.deps-web</artifactId>
+			<artifactId>com.springinpractice.web</artifactId>
 			<version>1.0-RELEASE</version>
-			<type>pom</type>
+			<type>war</type>
 		</dependency>
 		
 		<!-- Java dependencies -->
