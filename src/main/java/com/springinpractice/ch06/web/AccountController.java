@@ -12,6 +12,11 @@ package com.springinpractice.ch06.web;
 import javax.inject.Inject;
 import javax.validation.Valid;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -37,6 +42,10 @@ public class AccountController {
 	
 	@Inject private AccountService accountService;
 	
+	@Inject
+	@Qualifier("authenticationManager")
+	private AuthenticationManager authMgr;
+	
 	@InitBinder
 	public void initBinder(WebDataBinder binder) {
 		binder.setAllowedFields(new String[] { 
@@ -57,7 +66,14 @@ public class AccountController {
 			BindingResult result) {
 		
 		convertPasswordError(result);
-		accountService.registerAccount(toAccount(form), form.getPassword(), result);
+		String password = form.getPassword();
+		accountService.registerAccount(toAccount(form), password, result);
+		
+		Authentication authRequest =
+			new UsernamePasswordAuthenticationToken(form.getUsername(), password);
+		Authentication authResult = authMgr.authenticate(authRequest);
+		SecurityContextHolder.getContext().setAuthentication(authResult);
+		
 		return (result.hasErrors() ? VN_REG_FORM : VN_REG_OK);
 	}
 

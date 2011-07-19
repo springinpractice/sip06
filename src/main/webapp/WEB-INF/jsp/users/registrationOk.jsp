@@ -4,7 +4,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
-<c:url var="loginUrl" value="/login.html" />
+<c:url var="homeUrl" value="/home.html" />
 
 <spring:message var="pageTitle" code="registrationOk.pageTitle" />
 
@@ -15,6 +15,6 @@
 	<body>
 		<h1><c:out value="${pageTitle}" /></h1>
 		<p><spring:message code="registrationOk.message.thanks" /></p>
-		<p><a href="${loginUrl}">Log in</a></p>
+		<p><a href="${homeUrl}">Continue</a></p>
 	</body>
 </html>

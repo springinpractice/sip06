@@ -25,7 +25,7 @@
 		class="org.springframework.security.authentication.dao.ReflectionSaltSource"
 		p:userPropertyToUse="id" />
 		
-	<authentication-manager>
+	<authentication-manager alias="authenticationManager">
 		<authentication-provider user-service-ref="userDetailsService">
 			<password-encoder ref="passwordEncoder">
 				<salt-source ref="saltSource" />
