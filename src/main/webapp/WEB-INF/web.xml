@@ -17,13 +17,13 @@
 	</context-param>
 	<context-param>
 		<param-name>recipe</param-name>
-		<param-value>6.5</param-value>
+		<param-value>6.6</param-value>
 	</context-param>
 	<context-param>
 		<param-name>aboutThisRecipe</param-name>
 		<param-value><![CDATA[
-			<p>Recipe 6.5 shows how to use a custom database schema as an authentication source. Use either juan/juan
-			or elvira/elvira to log in.</p>
+			<p>Recipe 6.6 shows how to use a custom user service and user principal with Spring Security. Use either
+			juan/juan or elvira/elvira to log in.</p>
 		]]></param-value>
 	</context-param>
 	<listener>

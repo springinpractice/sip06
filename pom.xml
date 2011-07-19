@@ -11,12 +11,12 @@
 		<version>1.0-RELEASE</version>
 	</parent>
 	
-	<artifactId>com.springinpractice.06_05</artifactId>
+	<artifactId>com.springinpractice.06_06</artifactId>
 	<packaging>war</packaging>
 	
-	<name>Spring in Practice Recipe 6.5</name>
+	<name>Spring in Practice Recipe 6.6</name>
 	<description>
-		Recipe 6.5 shows how to use a custom database schema as an authentication source.
+		Recipe 6.6 shows how to use a custom user service and user principal with Spring Security.
 	</description>
 	<url>http://springinpractice.com/</url>
 	
@@ -28,6 +28,17 @@
 	<dependencies>
 	
 		<!-- Spring in Practice dependencies -->
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>com.springinpractice.api</artifactId>
+			<version>1.0-RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>com.springinpractice.deps-hibernate</artifactId>
+			<version>1.0-RELEASE</version>
+			<type>pom</type>
+		</dependency>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>com.springinpractice.web</artifactId>
