@@ -33,7 +33,7 @@ import com.springinpractice.ch06.service.AccountService;
 @RequestMapping("/users")
 public class AccountController {
 	private static final String VN_REG_FORM = "users/registrationForm";
-	private static final String VN_REG_OK = "redirect:registration_ok";
+	private static final String VN_REG_OK = "redirect:/users/registration_ok.html";
 	
 	@Inject private AccountService accountService;
 	

@@ -7,10 +7,13 @@ import org.hibernate.Query;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.security.authentication.dao.SaltSource;
+import org.springframework.security.authentication.encoding.PasswordEncoder;
 import org.springframework.stereotype.Repository;
 
 import com.springinpractice.ch06.dao.AccountDao;
 import com.springinpractice.ch06.domain.Account;
+import com.springinpractice.ch06.domain.UserDetailsAdapter;
 import com.springinpractice.dao.hibernate.AbstractHbnDao;
 
 @Repository
@@ -21,13 +24,17 @@ public class HbnAccountDao extends AbstractHbnDao<Account> implements AccountDao
 		"update account set password = ? where username = ?";
 	
 	@Inject private JdbcTemplate jdbcTemplate;
+	@Inject private PasswordEncoder passwordEncoder;
+	@Inject private SaltSource saltSource;
 	
 	public void create(Account account, String password) {
-		log.debug("Creating Account");
+		log.debug("Creating account: {}", account);
 		create(account);
 		
 		log.debug("Updating password");
-		jdbcTemplate.update(UPDATE_PASSWORD_SQL, password, account.getUsername());
+		Object salt = saltSource.getSalt(new UserDetailsAdapter(account));
+		String encPassword = passwordEncoder.encodePassword(password, salt);
+		jdbcTemplate.update(UPDATE_PASSWORD_SQL, encPassword, account.getUsername());
 	}
 
 	public Account findByUsername(String username) {
