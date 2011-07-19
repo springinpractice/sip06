@@ -11,12 +11,12 @@
 		<version>1.0-RELEASE</version>
 	</parent>
 	
-	<artifactId>com.springinpractice.06_04</artifactId>
+	<artifactId>com.springinpractice.06_05</artifactId>
 	<packaging>war</packaging>
 	
-	<name>Spring in Practice Recipe 6.4</name>
+	<name>Spring in Practice Recipe 6.5</name>
 	<description>
-		Recipe 6.4 shows how to use a database as an authentication source.
+		Recipe 6.5 shows how to use a custom database schema as an authentication source.
 	</description>
 	<url>http://springinpractice.com/</url>
 	
@@ -69,13 +69,11 @@
 		<dependency>
 			<groupId>com.mysql.jdbc</groupId>
 			<artifactId>com.springsource.com.mysql.jdbc</artifactId>
-<!-- 			<version>5.1.6</version> -->
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>com.springsource.org.apache.commons.dbcp</artifactId>
-<!-- 			<version>1.2.2.osgi</version> -->
 			<scope>runtime</scope>
 		</dependency>
 	</dependencies>

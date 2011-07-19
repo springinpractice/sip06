@@ -15,7 +15,15 @@
 	</http>
 	<authentication-manager>
 		<authentication-provider>
-			<jdbc-user-service data-source-ref="dataSource" />
+			<jdbc-user-service data-source-ref="dataSource"
+				users-by-username-query=
+					"select username, password, enabled
+					 from account where username = ?"
+				authorities-by-username-query=
+					"select a.username, r.name
+					 from account a, role r, account_role ar
+					 where ar.account_id = a.id and ar.role_id = r.id
+					 and a.username = ?" />
 		</authentication-provider>
 	</authentication-manager>
 </beans:beans>
