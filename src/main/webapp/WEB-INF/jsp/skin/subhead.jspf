@@ -2,6 +2,7 @@
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 
 <c:url var="homeUrl" value="/home.html" />
+<c:url var="registerUrl" value="/users/new.html" />
 <c:url var="postLoginUrl" value="/j_spring_security_check" />
 <c:url var="logoutUrl" value="/j_spring_security_logout" />
 
@@ -15,6 +16,7 @@
 				<span style="white-space:no-wrap">Username: <input type="text" name="j_username" style="width:100px" /></span>
 				<span style="margin-left:5px;white-space:no-wrap">Password: <input type="password" name="j_password" style="width:100px" /></span>
 				<span style="margin-left:5px"><input type="submit" value="Log in" /></span>
+				<span style="margin-left:20px"><a href="${registerUrl}">Register</a></span>
 			</form>
 		</security:authorize>
 		<security:authorize access="isAuthenticated()">
