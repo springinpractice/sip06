@@ -8,7 +8,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<title>${pageTitle}</title>
+		<title><c:out value="${pageTitle}" /></title>
 	</head>
 	<body>
 		<c:if test="${param.failed == true}">
@@ -17,7 +17,7 @@
 			</div>
 		</c:if>
 		
-		<h1>${pageTitle}</h1>
+		<h1><c:out value="${pageTitle}" /></h1>
 		
 		<form class="panel main" action="${postLoginUrl}" method="post">
 			<div class="formItem yui-gf">

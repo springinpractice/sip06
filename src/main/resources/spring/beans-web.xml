@@ -12,8 +12,8 @@
 	<mvc:default-servlet-handler />
 	
 	<mvc:view-controller path="/home.html" />
-	<mvc:view-controller path="/login-required.html" view-name="loginRequired" />
-	<mvc:view-controller path="/login-failed.html" view-name="loginFailed" />
+	<mvc:view-controller path="/login.html" />
+	<mvc:view-controller path="/users/registration_ok.html" view-name="users/registrationOk" />
 	
 	<context:component-scan base-package="com.springinpractice.ch06.web" />
 	
