@@ -7,8 +7,8 @@
 		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.0.xsd">
 		
 	<http auto-config="true" use-expressions="true">
-		<form-login login-page="/login-required.html"
-			authentication-failure-url="/login-failed.html"
+		<form-login login-page="/login.html"
+			authentication-failure-url="/login.html?failed=true"
 			default-target-url="/home.html" />
 		<remember-me />
 		<logout logout-success-url="/home.html" />
