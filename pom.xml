@@ -75,13 +75,11 @@
 		<dependency>
 			<groupId>com.mysql.jdbc</groupId>
 			<artifactId>com.springsource.com.mysql.jdbc</artifactId>
-<!-- 			<version>5.1.6</version> -->
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>com.springsource.org.apache.commons.dbcp</artifactId>
-<!-- 			<version>1.2.2.osgi</version> -->
 			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
