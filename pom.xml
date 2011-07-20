@@ -81,6 +81,18 @@
 			<groupId>org.springframework.security</groupId>
 			<artifactId>org.springframework.security.web</artifactId>
 		</dependency>
+		
+		<!-- Other dependencies -->
+		<dependency>
+			<groupId>com.mysql.jdbc</groupId>
+			<artifactId>com.springsource.com.mysql.jdbc</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>com.springsource.org.apache.commons.dbcp</artifactId>
+			<scope>runtime</scope>
+		</dependency>
 	</dependencies>
 	
 	<build>
@@ -88,6 +100,9 @@
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
 				<artifactId>maven-jetty-plugin</artifactId>
+				<configuration>
+					<jettyEnvXml>${chapter.conf.dir}/jetty-env.xml</jettyEnvXml>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
