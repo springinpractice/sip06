@@ -17,15 +17,12 @@
 	</context-param>
 	<context-param>
 		<param-name>recipe</param-name>
-		<param-value>6.7</param-value>
+		<param-value>6.8</param-value>
 	</context-param>
 	<context-param>
 		<param-name>aboutThisRecipe</param-name>
 		<param-value><![CDATA[
-			<p>In recipe 6.7 we learn how to secure user passwords at rest in the database using hashing and salt.</p>
-			<p>Any existing accounts (including juan, elvira and any accounts you created in recipe 6.6) will no longer
-			work, because the passwords aren't hashed or salted. Instead, create new accounts using the registration
-			form and inspect the passwords in the database.</p>
+			<p>Recipe 6.8 auto-authenticates a user immediately following a successful registration.</p>
 		]]></param-value>
 	</context-param>
 	<listener>

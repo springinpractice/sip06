@@ -11,12 +11,12 @@
 		<version>1.0-RELEASE</version>
 	</parent>
 	
-	<artifactId>com.springinpractice.06_07</artifactId>
+	<artifactId>com.springinpractice.06_08</artifactId>
 	<packaging>war</packaging>
 	
-	<name>Spring in Practice Recipe 6.7</name>
+	<name>Spring in Practice Recipe 6.8</name>
 	<description>
-		In recipe 6.7 we learn how to secure user passwords at rest in the database using hashing and salt.
+		Recipe 6.8 auto-authenticates a user immediately following a successful registration.
 	</description>
 	<url>http://springinpractice.com/</url>
 	
