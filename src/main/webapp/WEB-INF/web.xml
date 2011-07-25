@@ -23,8 +23,13 @@
 		<param-name>aboutThisRecipe</param-name>
 		<param-value><![CDATA[
 			<p>Recipe 6.6 shows how to use a custom user service and user principal with Spring Security.</p>
-			<p>In addition to the juan/juan or elvira/elvira accounts, you can create your own account using the
-			Register link and then use it to log in.</p>
+			<p>The following credentials are available:</p>
+			<ul>
+				<li>juan/p@ssword (user, admin)</li>
+				<li>elvira/p@ssword (user)</li>
+			</ul>
+			<p>In addition to the accounts above, you can create your own account using the Register link and then use
+			it to log in.</p>
 		]]></param-value>
 	</context-param>
 	<listener>
