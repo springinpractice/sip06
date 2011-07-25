@@ -22,8 +22,12 @@
 	<context-param>
 		<param-name>aboutThisRecipe</param-name>
 		<param-value><![CDATA[
-			<p>Recipe 6.5 shows how to use a custom database schema as an authentication source. Use either juan/juan
-			or elvira/elvira to log in.</p>
+			<p>Recipe 6.5 shows how to use a custom database schema as an authentication source.</p>
+			<p>The following credentials are available:</p>
+			<ul>
+				<li>juan/p@ssword (user, admin)</li>
+				<li>elvira/p@ssword (user)</li>
+			</ul>
 		]]></param-value>
 	</context-param>
 	<listener>
