@@ -1,5 +1,5 @@
-insert into account values (1, 'juan', 'Juan', 'Cazares', 'juan.cazares@example.com', 'juan', 1, 1, 1, null, null);
-insert into account values (2, 'elvira', 'Elvira', 'Cazares', 'elvira.cazares@example.com', 'elvira', 1, 1, 1, null, null);
+insert into account values (1, 'juan', 'Juan', 'Cazares', 'juan.cazares@example.com', 'p@ssword', 1, 1, 1, null, null);
+insert into account values (2, 'elvira', 'Elvira', 'Cazares', 'elvira.cazares@example.com', 'p@ssword', 1, 1, 1, null, null);
 
 insert into role values (1, 'user');
 insert into role values (2, 'admin');
