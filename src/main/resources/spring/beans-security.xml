@@ -16,8 +16,8 @@
 	<authentication-manager>
 		<authentication-provider>
 			<user-service>
-				<user name="juan" password="juan" authorities="user,admin" />
-				<user name="elvira" password="elvira" authorities="user" />
+				<user name="juan" password="p@ssword" authorities="user,admin" />
+				<user name="elvira" password="p@ssword" authorities="user" />
 			</user-service>
 		</authentication-provider>
 	</authentication-manager>

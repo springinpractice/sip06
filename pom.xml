@@ -16,7 +16,8 @@
 	
 	<name>Spring in Practice Recipe 6.3</name>
 	<description>
-		Implement login and logout with remember-me authentication.
+		Recipe 6.3 shows how to implement an "always resident" login form&mdash;that is, one that appears on every page
+		of the site until the user logs in.
 	</description>
 	<url>http://springinpractice.com/</url>
 	
