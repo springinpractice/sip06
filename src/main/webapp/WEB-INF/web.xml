@@ -19,8 +19,8 @@
 	<context-param>
 		<param-name>aboutThisRecipe</param-name>
 		<param-value><![CDATA[
-			<p>Recipe 6.1 shows how to use Spring Security to implement a basic login/logout capability, including
-			remember-me authentication. The following credentials are available:</p>
+			<p>In recipe 6.2 we replace the default Spring Security login form with a custom login form.</p>
+			<p>The following credentials are available:</p>
 			<ul>
 				<li>juan/p@ssword (user, admin)</li>
 				<li>elvira/p@ssword (user)</li>
