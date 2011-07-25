@@ -5,17 +5,25 @@
 <c:url var="loginUrl" value="/login.html" />
 <c:url var="logoutUrl" value="/j_spring_security_logout" />
 
-<div class="yui-gf">
-	<div id="topNav" class="yui-u first">
-		<a href="${homeUrl}">Home</a>
+<div id="subhd" class="yui-g">
+	<div class="yui-u first">
+		<div id="topNav">
+			<ul>
+				<li><a href="${homeUrl}">Home</a></li>
+			</ul>
+		</div>
 	</div>
-	<div id="sessionInfo" class="yui-u">
+	<div class="yui-u">
 		<security:authorize access="isAnonymous()">
-			Hi, guest. <a href="${loginUrl}">Log in</a>
+			<div id="sessionInfo">
+				Hi, guest. <a href="${loginUrl}">Log in</a>
+			</div>
 		</security:authorize>
 		<security:authorize access="isAuthenticated()">
-			Hi, <security:authentication property="principal.username" />.
-			<a href="${logoutUrl}">Log out</a>
+			<div id="sessionInfo">
+				Hi, <security:authentication property="principal.username" />.
+				<a href="${logoutUrl}">Log out</a>
+			</div>
 		</security:authorize>
 	</div>
 </div>
