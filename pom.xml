@@ -16,7 +16,8 @@
 	
 	<name>Spring in Practice Recipe 6.1</name>
 	<description>
-		Implement login and logout with remember-me authentication.
+		Recipe 6.1 shows how to use Spring Security to implement a basic login/logout capability, including remember-me
+		authentication.
 	</description>
 	<url>http://springinpractice.com/</url>
 	

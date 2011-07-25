@@ -18,7 +18,14 @@
 	</context-param>
 	<context-param>
 		<param-name>aboutThisRecipe</param-name>
-		<param-value>TODO</param-value>
+		<param-value><![CDATA[
+			<p>Recipe 6.1 shows how to use Spring Security to implement a basic login/logout capability, including
+			remember-me authentication. The following credentials are available:</p>
+			<ul>
+				<li>juan/p@ssword (user, admin)</li>
+				<li>elvira/p@ssword (user)</li>
+			</ul>
+		]]></param-value>
 	</context-param>
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
