@@ -11,6 +11,7 @@
 		<div id="topNav">
 			<ul>
 				<li><a href="${homeUrl}">Home</a></li>
+				<li><a href="${registerUrl}">Register</a></li>
 			</ul>
 		</div>
 	</div>
