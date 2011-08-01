@@ -16,7 +16,8 @@
 	
 	<name>Spring in Practice Recipe 6.6</name>
 	<description>
-		Recipe 6.6 shows how to use a custom user service and user principal with Spring Security.
+		Recipe 6.6 shows how to use a custom user service and user principal with Spring Security. We incorporate the
+		registration capability from chapter 4.
 	</description>
 	<url>http://springinpractice.com/</url>
 	
