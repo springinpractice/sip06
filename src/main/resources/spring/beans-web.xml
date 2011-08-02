@@ -10,8 +10,7 @@
 	
 	<mvc:annotation-driven />
 	<mvc:default-servlet-handler />
-	
-	<mvc:view-controller path="/home.html" />
+	<mvc:view-controller path="/home.html" view-name="extras/home" />
 	<mvc:view-controller path="/login.html" />
 	<mvc:view-controller path="/users/registration_ok.html" view-name="users/registrationOk" />
 	
