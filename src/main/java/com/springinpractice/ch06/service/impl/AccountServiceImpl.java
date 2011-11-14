@@ -39,7 +39,7 @@ public class AccountServiceImpl implements AccountService {
 	@Inject private AccountDao accountDao;
 	@Inject private RoleDao roleDao;
 	
-	@Transactional(readOnly = false)	
+	@Transactional(readOnly = false)
 	public boolean registerAccount(Account account, String password, Errors errors) {
 		validateUsername(account.getUsername(), errors);
 		boolean valid = !errors.hasErrors();

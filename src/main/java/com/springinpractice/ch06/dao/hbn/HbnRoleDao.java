@@ -1,6 +1,5 @@
 package com.springinpractice.ch06.dao.hbn;
 
-import org.hibernate.Query;
 import org.springframework.stereotype.Repository;
 
 import com.springinpractice.ch06.dao.RoleDao;
@@ -15,8 +14,9 @@ import com.springinpractice.dao.hibernate.AbstractHbnDao;
 public class HbnRoleDao extends AbstractHbnDao<Role> implements RoleDao {
 
 	public Role findByName(String name) {
-		Query q = getSession().getNamedQuery("findRoleByName");
-		q.setParameter("name", name);
-		return (Role) q.uniqueResult();
+		return (Role) getSession()
+			.getNamedQuery("findRoleByName")
+			.setParameter("name", name)
+			.uniqueResult();
 	}
 }
