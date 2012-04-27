@@ -18,7 +18,7 @@
 					Your login attempt failed. Please try again, or contact technical support for further assistance.
 				</div>
 			</c:if>
-			<div class="panel grid">
+			<div class="panel grid" style="width:420px">
 				<div class="gridRow yui-gf">
 					<div class="fieldLabel yui-u first">Username:</div>
 					<div class="yui-u"><input type="text" name="j_username" class="short" /></div>
