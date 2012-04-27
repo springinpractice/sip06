@@ -1,6 +1,6 @@
-drop table if exists account_role;
-drop table if exists role;
-drop table if exists account;
+drop database if exists sip06;
+create database sip06;
+use sip06;
 
 create table account (
     id bigint unsigned not null auto_increment primary key,
