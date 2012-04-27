@@ -1,9 +1,7 @@
 package com.springinpractice.ch06.dao.hbn;
 
-
 import javax.inject.Inject;
 
-import org.hibernate.Query;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -38,8 +36,9 @@ public class HbnAccountDao extends AbstractHbnDao<Account> implements AccountDao
 	}
 
 	public Account findByUsername(String username) {
-		Query q = getSession().getNamedQuery("findAccountByUsername");
-		q.setParameter("username", username);
-		return (Account) q.uniqueResult();
+		return (Account) getSession()
+				.getNamedQuery("findAccountByUsername")
+				.setParameter("username", username)
+				.uniqueResult();
 	}
 }
