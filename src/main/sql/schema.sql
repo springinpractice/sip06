@@ -1,5 +1,6 @@
-drop table if exists authorities;
-drop table if exists users;
+drop database if exists sip06;
+create database sip06;
+use sip06;
 
 create table users (
     username varchar(50) not null primary key,
