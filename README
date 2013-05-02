@@ -13,8 +13,3 @@ Code: https://github.com/springinpractice
 This chapter explores authentication using Spring Security 3.
 
 Recipe 6.8 auto-authenticates a user immediately following a successful registration.
-
-The following credentials are available:
-
-* juan/p@ssword (roles: user, admin)
-* elvira/p@ssword (role: user)
