@@ -1,3 +1,10 @@
+/* 
+ * Copyright (c) 2013 Manning Publications Co.
+ * 
+ * Book: http://manning.com/wheeler/
+ * Blog: http://springinpractice.com/
+ * Code: https://github.com/springinpractice
+ */
 package com.springinpractice.ch06.dao.jdbc;
 
 import static org.junit.Assert.assertEquals;
@@ -11,6 +18,9 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+/**
+ * @author Willie Wheeler (willie.wheeler@gmail.com)
+ */
 public class JdbcUserDetailsDaoTest {
 	private static final String USERNAME = "willie";
 	private static final String PASSWORD = "password";

@@ -1,3 +1,10 @@
+/* 
+ * Copyright (c) 2013 Manning Publications Co.
+ * 
+ * Book: http://manning.com/wheeler/
+ * Blog: http://springinpractice.com/
+ * Code: https://github.com/springinpractice
+ */
 package com.springinpractice.ch06.domain;
 
 import static org.junit.Assert.assertEquals;
@@ -11,6 +18,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.security.core.GrantedAuthority;
 
+/**
+ * @author Willie Wheeler (willie.wheeler@gmail.com)
+ */
 public class UserDetailsAdapterTest {
 	private static final DomainMom MOM = DomainMom.instance();
 	

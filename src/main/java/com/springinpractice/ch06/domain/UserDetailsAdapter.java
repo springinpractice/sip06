@@ -1,3 +1,10 @@
+/* 
+ * Copyright (c) 2013 Manning Publications Co.
+ * 
+ * Book: http://manning.com/wheeler/
+ * Blog: http://springinpractice.com/
+ * Code: https://github.com/springinpractice
+ */
 package com.springinpractice.ch06.domain;
 
 import java.util.Collection;
@@ -8,6 +15,9 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.GrantedAuthorityImpl;
 import org.springframework.security.core.userdetails.UserDetails;
 
+/**
+ * @author Willie Wheeler (willie.wheeler@gmail.com)
+ */
 @SuppressWarnings("serial")
 public class UserDetailsAdapter implements UserDetails {
 	private Account account;

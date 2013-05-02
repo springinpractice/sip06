@@ -1,3 +1,10 @@
+/* 
+ * Copyright (c) 2013 Manning Publications Co.
+ * 
+ * Book: http://manning.com/wheeler/
+ * Blog: http://springinpractice.com/
+ * Code: https://github.com/springinpractice
+ */
 package com.springinpractice.ch06.service.impl;
 
 import javax.inject.Inject;
@@ -18,7 +25,6 @@ import com.springinpractice.ch06.service.AccountService;
  * Adapts the <code>AccountService</code> and <code>UserDetailsDao</code> to the <code>UserDetailsService</code>
  * interface so Spring Security can use them as an authentication source.
  * 
- * @version $Id: UserDetailsServiceAdapter.java 86 2010-09-06 19:45:05Z  $
  * @author Willie Wheeler (willie.wheeler@gmail.com)
  */
 @Service("userDetailsService")

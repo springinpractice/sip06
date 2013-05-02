@@ -1,11 +1,9 @@
 /* 
- * $Id: AccountForm.java 86 2010-09-06 19:45:05Z  $
+ * Copyright (c) 2013 Manning Publications Co.
  * 
- * Copyright (c) 2010 Manning Publications Co.
- * 
- * Book web site   - http://www.manning.com/wheeler/
- * Book blog       - http://springinpractice.com/
- * Author web site - http://wheelersoftware.com/
+ * Book: http://manning.com/wheeler/
+ * Blog: http://springinpractice.com/
+ * Code: https://github.com/springinpractice
  */
 package com.springinpractice.ch06.web;
 
@@ -19,7 +17,6 @@ import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.ScriptAssert;
 
 /**
- * @version $Id: AccountForm.java 86 2010-09-06 19:45:05Z  $
  * @author Willie Wheeler (willie.wheeler@gmail.com)
  */
 // Requires scripting engine (e.g. Rhino included automatically with Java 6)
