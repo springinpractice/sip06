@@ -1,9 +1,21 @@
 ========================================================================================================================
-Spring in Practice, Chapter 6
+README - Spring in Practice Recipe 6.3
 
-Copyright (c) 2008-2011 Manning Publications Co.
+Copyright (c) 2013 Manning Publications Co.
 
 Willie Wheeler (willie.wheeler@gmail.com)
+
+Book: http://manning.com/wheeler/
+Blog: http://springinpractice.com/
+Code: https://github.com/springinpractice
 ========================================================================================================================
 
 This chapter explores authentication using Spring Security 3.
+
+Recipe 6.3 shows how to implement an "always resident" login form; that is, one that appears on every page of the site
+until the user logs in.
+
+The following credentials are available:
+
+* juan/p@ssword (roles: user, admin)
+* elvira/p@ssword (role: user)
