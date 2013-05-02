@@ -1,3 +1,10 @@
+/* 
+ * Copyright (c) 2013 Manning Publications Co.
+ * 
+ * Book: http://manning.com/wheeler/
+ * Blog: http://springinpractice.com/
+ * Code: https://github.com/springinpractice
+ */
 package com.springinpractice.ch06.dao.hbn;
 
 import javax.inject.Inject;
@@ -11,6 +18,9 @@ import com.springinpractice.ch06.dao.AccountDao;
 import com.springinpractice.ch06.domain.Account;
 import com.springinpractice.dao.hibernate.AbstractHbnDao;
 
+/**
+ * @author Willie Wheeler (willie.wheeler@gmail.com)
+ */
 @Repository
 public class HbnAccountDao extends AbstractHbnDao<Account> implements AccountDao {
 	private static final Logger log = LoggerFactory.getLogger(HbnAccountDao.class);
