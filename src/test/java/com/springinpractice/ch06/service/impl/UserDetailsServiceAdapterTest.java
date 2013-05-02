@@ -1,3 +1,10 @@
+/* 
+ * Copyright (c) 2013 Manning Publications Co.
+ * 
+ * Book: http://manning.com/wheeler/
+ * Blog: http://springinpractice.com/
+ * Code: https://github.com/springinpractice
+ */
 package com.springinpractice.ch06.service.impl;
 
 import static org.junit.Assert.assertEquals;
@@ -16,6 +23,9 @@ import com.springinpractice.ch06.dao.UserDetailsDao;
 import com.springinpractice.ch06.domain.DomainMom;
 import com.springinpractice.ch06.service.AccountService;
 
+/**
+ * @author Willie Wheeler (willie.wheeler@gmail.com)
+ */
 public class UserDetailsServiceAdapterTest {
 	private static final DomainMom MOM = DomainMom.instance();
 	

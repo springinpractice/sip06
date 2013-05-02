@@ -12,8 +12,7 @@ Code: https://github.com/springinpractice
 
 This chapter explores authentication using Spring Security 3.
 
-Recipe 6.6 shows how to use a custom user service and user principal with Spring Security. We incorporate the
-registration capability from chapter 4.
+In recipe 6.7 we learn how to secure user passwords at rest in the database using hashing and salt.
 
 The following credentials are available:
 
