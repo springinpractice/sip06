@@ -12,7 +12,8 @@ Code: https://github.com/springinpractice
 
 This chapter explores authentication using Spring Security 3.
 
-In recipe 6.2 we replace the default Spring Security login form with a custom login form.
+Recipe 6.3 shows how to implement an "always resident" login form; that is, one that appears on every page of the site
+until the user logs in.
 
 The following credentials are available:
 
