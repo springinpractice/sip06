@@ -1,5 +1,5 @@
 ========================================================================================================================
-README - Spring in Practice Recipe 6.6
+README - Spring in Practice Recipe 6.8
 
 Copyright (c) 2013 Manning Publications Co.
 
@@ -12,7 +12,7 @@ Code: https://github.com/springinpractice
 
 This chapter explores authentication using Spring Security 3.
 
-In recipe 6.7 we learn how to secure user passwords at rest in the database using hashing and salt.
+Recipe 6.8 auto-authenticates a user immediately following a successful registration.
 
 The following credentials are available:
 
