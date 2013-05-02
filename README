@@ -13,7 +13,3 @@ Code: https://github.com/springinpractice
 This chapter explores authentication using Spring Security 3.
 
 Recipe 6.8 auto-authenticates a user immediately following a successful registration.
-
-Any existing accounts (including juan, elvira and any accounts you created in recipe 6.6) will no longer work, because
-the passwords aren't hashed or salted. Instead, create new accounts using the registration form and inspect the
-passwords in the database.
