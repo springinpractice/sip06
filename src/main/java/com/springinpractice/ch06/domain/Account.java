@@ -1,3 +1,10 @@
+/* 
+ * Copyright (c) 2013 Manning Publications Co.
+ * 
+ * Book: http://manning.com/wheeler/
+ * Blog: http://springinpractice.com/
+ * Code: https://github.com/springinpractice
+ */
 package com.springinpractice.ch06.domain;
 
 import java.util.Collection;
@@ -21,6 +28,9 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.Email;
 
+/**
+ * @author Willie Wheeler (willie.wheeler@gmail.com)
+ */
 @NamedQuery(
 	name = "findAccountByUsername",
 	query = "from Account where username = :username")

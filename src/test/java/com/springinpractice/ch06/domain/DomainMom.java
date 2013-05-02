@@ -1,3 +1,10 @@
+/* 
+ * Copyright (c) 2013 Manning Publications Co.
+ * 
+ * Book: http://manning.com/wheeler/
+ * Blog: http://springinpractice.com/
+ * Code: https://github.com/springinpractice
+ */
 package com.springinpractice.ch06.domain;
 
 import java.util.HashSet;
@@ -5,6 +12,8 @@ import java.util.Set;
 
 /**
  * Object mother for domain objects.
+ * 
+ * @author Willie Wheeler (willie.wheeler@gmail.com)
  */
 public final class DomainMom {
 	private static final DomainMom MOM = new DomainMom();
