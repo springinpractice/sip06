@@ -14,7 +14,6 @@ This chapter explores authentication using Spring Security 3.
 
 In recipe 6.7 we learn how to secure user passwords at rest in the database using hashing and salt.
 
-The following credentials are available:
-
-* juan/p@ssword (roles: user, admin)
-* elvira/p@ssword (role: user)
+Any existing accounts (including juan, elvira and any accounts you created in recipe 6.6) will no longer work, because
+the passwords aren't hashed or salted. Instead, create new accounts using the registration form and inspect the
+passwords in the database.
