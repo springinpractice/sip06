@@ -1,5 +1,5 @@
 ========================================================================================================================
-README - Spring in Practice Recipe 6.1
+README - Spring in Practice Recipe 6.2
 
 Copyright (c) 2013 Manning Publications Co.
 
@@ -12,8 +12,9 @@ Code: https://github.com/springinpractice
 
 This chapter explores authentication using Spring Security 3.
 
-Recipe 6.1 shows how to use Spring Security to implement a basic login/logout capability, including remember-me
-authentication. The following credentials are available:
+In recipe 6.2 we replace the default Spring Security login form with a custom login form.
+
+The following credentials are available:
 
 * juan/p@ssword (roles: user, admin)
 * elvira/p@ssword (role: user)
